@@ -1,11 +1,304 @@
 <!DOCTYPE HTML>
 <html lang="en">
+  <!--Last update: March 6th, 2019-->
   <head>
-    <title>D. Graux</title>
+    <title>Damien Graux</title>
+    <style>
+
+      body { margin:20px 50px; }
+      p {
+      margin:20px 20px;
+      text-align: justify;
+      text-justify: inter-word;
+      }
+
+      .header {
+      background-color: #f1f1f1;
+      padding: 20px;
+      text-align: center;
+      }
+
+      .column {
+      float: left;
+      }
+
+      /* Left and right column */
+      .column.side {
+      width: 20%;
+      }
+
+      /* Middle column */
+      .column.middle {
+      width: 80%;
+      }
+
+      /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 600px) {
+      .column.side, .column.middle {
+      width: 100%;
+      }
+      }
+
+      .row:after {
+      content: "";
+      display: table;
+      clear: both;
+      }
+      
+      .page-header{
+      border-radius: 6px;
+      padding: 5px 15px;
+      margin: 10px 0px;
+      }
+      
+      h1.page-header {
+      background-color: rgb(75, 125, 190);
+      color: white;
+      }
+      
+      h2.page-header {
+      background-color: rgb(218, 229, 241);
+      }
+      
+      h3.page-header {
+      background-color: rgb(238, 238, 238);
+      }
+
+      .footer {
+      background-color: #F1F1F1;
+      text-align: center;
+      padding: 10px;
+      }
+    </style>
   </head>
+
+
+
+
   <body>
-    <p>
-      Damien's webpage - to be released soon.
-    </p>
+
+    <div class="header">
+      <h1>Damien Graux, PhD</h1>
+      <h2>~ Senior Researcher at Fraunhofer ~</h2>
+    </div>
+
+    <h1 class="page-header">Short Bio.</h1>
+
+    <div class="row">
+      <div class="column middle">
+	<p>
+	  <b>Since 2018</b>, I am a Senior Researcher at
+	  the <a href="https://www.iais.fraunhofer.de/en.html">Fraunhofer
+	  IAIS</a> in Sankt Augustin (Germany, close to Bonn) focusing
+	  on the domain of Semantic Web and Linked Data in the context
+	  of large-scale datasets. My research topics include ontology
+	  management, ontology engineering, Semantic Web, Linked Data,
+	  clustering, machine learning methods. I am also an
+	  associated researcher of
+	  the <a href="http://sda.tech/">Smart Data Analytics</a>
+	  group at the University of Bonn, under the lead of
+	  Prof. Jens Lehmann.
+	</p>
+	<hr>
+	<p>
+	  <b>In 2017</b>, still with
+	  the <a href="http://tyrex.inria.fr/">Tyrex group</a> (in
+	  Inria, France), I pushed further what I developed during my
+	  PhD thesis by integrating SPARQL evaluators into larger
+	  systems where various kinds of data structures are involved:
+	  several query results are needed (and aggregated) to build a
+	  complex answer. More specifically, I was trying to design
+	  efficient languages to facilitate the development of
+	  optimized ETL pipelines in a semantic context.
+	</p>
+	<hr>
+	<p>
+	  <b>From 2013 to 2016</b>, during my PhD thesis at Inria,
+	  with the <a href="http://tyrex.inria.fr/">Tyrex group</a> in
+	  Grenoble, I focused on Semantic
+	  Web <a href="https://en.wikipedia.org/wiki/Semantic_Web#Standards">standards</a>,
+	  especially on the Resource Description
+	  Framework <a href="https://www.w3.org/TR/2004/REC-rdf-primer-20040210/">RDF</a>
+	  and its dedicated query language
+	  <a href="https://www.w3.org/TR/sparql11-query/">SPARQL</a>. My
+	  main goal was to design efficient tools to evaluate SPARQL
+	  queries on very large RDF datasets (<i>i.e.</i>
+	  &geq;100GB). Indeed, I provided a new reading grid to rank
+	  SPARQL evaluators before designing several efficient ones.
+	</p>
+	<!-- <ul> -->
+	<!--   <li> -->
+	<!--     Distributed systems <i>e.g.</i> Apache Hadoop, Apache Spark... -->
+	<!--   </li> -->
+	<!--   <li> -->
+	<!--     RDF storage methods -->
+	<!--   </li> -->
+	<!--   <li> -->
+	<!--     SPARQL evaluation strategies in a distributed context -->
+	<!--   </li> -->
+	<!--   <li> -->
+	<!--     RDF/SPARQL Benchmarks -->
+	<!--   </li> -->
+	<!-- </ul> -->
+	<p>
+	  As a past time during my PhD main activities, I also
+	  designed a semantic pipeline for trip planning aggregating
+	  heterogeneous datasets (<i>e.g.</i> GTFS, RDF, CSV) in order
+	  to provide users touristic alternatives at plane stopovers.
+	</p>
+	<hr>
+	<p>
+	  Previously, <b>before 2013</b>, I worked on designing and
+	  implementing broadcast algorithms with special properties
+	  such as UTO (uniform and totally ordered). This work, mainly
+	  developed in C, is also openly available from
+	  <a href="http://github.com/simatic/TrainsProtocol">github</a>.
+	</p>
+	
+      </div>
+      
+      <div class="column side">
+	<img src="./IMG_20180513_115203.jpg" alt="On an old rail bridge" width="95%" align="right">
+      </div>
+    </div>
+
+    <br/>
+    <br/>
+    
+    <h2 class="page-header">Contact</h2>
+    <ul>
+      <li>Address:<br/>  Schloss Birlinghoven<br/>  Sankt Augustin<br/>  Germany</li>
+      <li>Email: damien [DOT] graux [AT] iais [DOT] fraunhofer [DOT] de
+    </ul>
+    
+
+    <!-- <h1 class="page-header">Publications</h1> -->
+    <!-- <ol> -->
+    <!--   <li>mepdaw 2019</li> -->
+    <!--   <li>www 2019</li> -->
+    <!--   <li>EDBT 2019</li> -->
+    <!--   <li>IEEE BigData 2018</li> -->
+    <!--   <li>Semantics 2018 Cryptokitties</li> -->
+    <!--   <li>BDA 2017</li> -->
+      
+    <!--   <li> -->
+    <!-- 	<b>SPARUB: SPARQL UPDATE Benchmark</b> [<a href="" target="_blank">PDF</a>]<br> -->
+    <!-- 	<u>Damien Graux</u>, Pierre Genevès, Nabil Layaïda<br> -->
+    <!-- 	2017 -->
+    <!--   </li> -->
+    <!--   <li> -->
+    <!-- 	<b>HAP: Building Pipelines with Heterogeneous Data and Hive</b> [<a href="" target="_blank">PDF</a>]<br> -->
+    <!-- 	<u>Damien Graux</u>, Pierre Genevès, Nabil Layaïda<br> -->
+    <!-- 	2017 -->
+    <!--   </li> -->
+    <!--   <li> -->
+    <!-- 	<b>On the Efficient Distributed Evaluation of SPARQL Queries</b> [<a href="" target="_blank">PDF</a>]<br> -->
+    <!-- 	<u>Damien Graux</u><br> -->
+    <!-- 	2016 -->
+    <!--   </li> -->
+    <!--   <li> -->
+    <!-- 	<b>SPARQLGX : Une Solution Distribuée pour RDF Traduisant SPARQL vers Spark</b> [<a href="" target="_blank">PDF</a>]<br> -->
+    <!-- 	<u>Damien Graux</u>, Louis Jachiet, Pierre Genevès, Nabil Layaïda<br> -->
+    <!-- 	BDA 2016 - 32ème Conférence sur la Gestion de Données - Principes, Technologies et Applications, Nov 2016, Poitiers, France. BDA2016 -->
+    <!--   </li> -->
+    <!--   <li> -->
+    <!-- 	<b>SPARQLGX in Action: Efficient Distributed Evaluation of SPARQL with Apache Spark</b> [<a href="" target="_blank">PDF</a>]<br> -->
+    <!-- 	<u>Damien Graux</u>, Louis Jachiet, Pierre Genevès, Nabil Layaïda<br/> -->
+    <!-- 	15th International Semantic Web Conference (ISWC 2016 demo paper), Oct 2016, Kobe, Japan. 15th International Semantic Web Conference -->
+    <!--   </li> -->
+    <!--   <li> -->
+    <!-- 	<b>Smart Trip Alternatives for the Curious</b> [<a href="" target="_blank">PDF</a>]<br> -->
+    <!-- 	<u>Damien Graux</u>, Pierre Genevès, Nabil Layaïda<br> -->
+    <!-- 	15th International Semantic Web Conference (ISWC 2016 demo paper), Oct 2016, Kobe, Japan. 15th International Semantic Web Conference -->
+    <!--   </li> -->
+    <!--   <li> -->
+    <!-- 	<b>SPARQLGX: Efficient Distributed Evaluation of SPARQL with Apache Spark</b> [<a href="" target="_blank">PDF</a>]<br> -->
+    <!-- 	  <u>Damien Graux</u>, Louis Jachiet, Pierre Genevès, Nabil Layaïda<br/> -->
+    <!-- 	  The 15th International Semantic Web Conference, Oct 2016, Kobe, Japan. The 15th International Semantic Web Conference, &lt;10.1007/978-3-319-46547-0_9&gt; -->
+    <!--   </li> -->
+    <!--   <li> -->
+    <!-- 	<b>TRAINS : a Throughput-Efficient Uniform Total Order Broadcast Algorithm</b> [<a href="" target="_blank">PDF</a>]<br> -->
+    <!-- 	  Michel Simatic, Arthur Foltz, <u>Damien Graux</u>, Nicolas Hascoet, Stéphanie Ouillon, Nathan Reboud, Tiezhen Wang<br> -->
+    <!-- 	  NTDS - ICPE 2015 : International Conference on Protocol Engineering (ICPE) and International Conference on New Technologies of Distributed Systems (NTDS), Jul 2015, Paris, France. IEEE, Proceedings NTDS - ICPE 2015 : International Conference on Protocol Engineering (ICPE) and International Conference on New Technologies of Distributed Systems (NTDS), pp.1 - 8, 2015, &lt;10.1109/NOTERE.2015.7293477&gt; -->
+    <!-- 	</li> -->
+    <!-- </ol> -->
+
+    <!-- <h1 class="page-header">Public Projects</h1> -->
+    <!-- <ol> -->
+    <!--   <li> -->
+    <!-- 	[Since 2019] <a href="https://project-lambda.org/">LAMBDA</a> -->
+    <!-- 	(<b>L</b>earning, <b>A</b>pplying, <b>M</b>ultiplying <b>B</b>ig <b>D</b>ata <b>A</b>nalytics) -->
+    <!-- 	defines a scientific strategy for stepping up and stimulating -->
+    <!-- 	scientific excellence and innovation capacity, increasing -->
+    <!-- 	research capacities and unlocking the research potential of -->
+    <!-- 	the biggest and the oldest Rn'D Institute in the ICT area in -->
+    <!-- 	the whole West Balkan region, turning the Institute Mihajlo -->
+    <!-- 	Pupin into a regional point of reference when it comes to -->
+    <!-- 	multidisciplinary ICT competence related to Big Data -->
+    <!-- 	analytics. The project implements a thoroughly prepared plan -->
+    <!-- 	of actions for knowledge exchange and transfer between the -->
+    <!-- 	linked institutions and carries out a wide range of -->
+    <!-- 	dissemination and outreach activities in the West Balkan -->
+    <!-- 	countries and across Europe. Different knowledge transfer -->
+    <!-- 	instruments (mentorships, brainstorming sessions, school type -->
+    <!-- 	activities) and different types of twinning relationships -->
+    <!-- 	(institution to institution, institution to network) are used -->
+    <!-- 	to further strengthen and extend the collaboration with -->
+    <!-- 	internationally-leading counterparts. -->
+    <!--   </li> -->
+    <!--   <li>[Since 2019] QualiChain</li> -->
+    <!--   <li>[Since 2018] SemanGit</li> -->
+    <!--   <li>[Since 2018] BETTER</li> -->
+    <!--   <li>[Since 2018] SLIPO</li> -->
+    <!--   <li>[2017] Clear</li> -->
+    <!--   <li>[2013-2016] <a href="http://www.datalyse.fr/">Datalyse</a></li> -->
+    <!-- </ol> -->
+
+    <!-- <h1 class="page-header">Software</h1> -->
+    <!-- <p> -->
+    <!--   I also contributed to: -->
+    <!-- </p> -->
+    <!-- <ul> -->
+    <!--   <li> -->
+    <!-- 	<a href="http://github.com/tyrex-team/sparqlgx">SPARQLGX</a>: -->
+    <!-- 	an efficient distributed evaluator of SPARQL -->
+    <!-- 	queries based on Apache Spark. -->
+    <!--   </li> -->
+    <!--   <li> -->
+    <!-- 	<a href="http://github.com/tyrex-team/rdfhive">RDFHive</a>: -->
+    <!-- 	a direct evaluator of SPARQL queries on top of -->
+    <!-- 	Apache Hive. -->
+    <!--   </li> -->
+    <!--   <li> -->
+    <!-- 	<a href="http://github.com/tyrex-team/sparqlgx">SDE</a>: -->
+    <!-- 	a solution to directly evaluate SPARQL queries -->
+    <!-- 	using Apache Spark. -->
+    <!--   </li> -->
+    <!--   <li> -->
+    <!-- 	GTFS-Store: the <b>first</b> distributed store -->
+    <!-- 	dedicated to GTFS datasets which uses Apache -->
+    <!-- 	Spark to find paths. -->
+    <!--   </li> -->
+    <!-- </ul> -->
+    
+    <!-- <h1 class="page-header">Teaching</h1> -->
+    <!-- <ul> -->
+    <!--   <li></li> -->
+    <!-- </ul> -->
+
+    <!-- <h1 class="page-header">Scientific Actvities</h1> -->
+    <!-- <ul> -->
+    <!--   <li></li> -->
+    <!-- </ul> -->
+
+    <footer>
+      <hr/>
+      <div class="footer">
+	© 2019 - Copyright: Damien Graux
+      </div>
+    </footer>
+    
   </body>
+
+  <!--Style inspired by <https://chrdebru.github.io/>-->
 </html>
