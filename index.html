@@ -69,6 +69,30 @@
       text-align: center;
       padding: 10px;
       }
+
+      table {
+      width:98%;
+      margin-left: auto;
+      margin-right: auto;
+      }
+      table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      }
+      th, td {
+      padding: 5px;
+      text-align: left;
+      }
+      table#t01 tr:nth-child(even) {
+      background-color: rgb(238, 238, 238);
+      }
+      table#t01 tr:nth-child(odd) {
+      background-color: transparent;
+      }
+      table#t01 th {
+      background-color: rgb(218, 229, 241);
+      color: black;
+      }
     </style>
   </head>
 
@@ -309,37 +333,92 @@
     	</li>
     </ol>
 
-    <!-- <h1 class="page-header">Funded Research Projects</h1> -->
-    <!-- <ol> -->
-    <!--   <li> -->
-    <!-- 	[Since 2019] <a href="https://project-lambda.org/">LAMBDA</a> -->
-    <!-- 	(<b>L</b>earning, <b>A</b>pplying, <b>M</b>ultiplying <b>B</b>ig <b>D</b>ata <b>A</b>nalytics) -->
-    <!-- 	defines a scientific strategy for stepping up and stimulating -->
-    <!-- 	scientific excellence and innovation capacity, increasing -->
-    <!-- 	research capacities and unlocking the research potential of -->
-    <!-- 	the biggest and the oldest Rn'D Institute in the ICT area in -->
-    <!-- 	the whole West Balkan region, turning the Institute Mihajlo -->
-    <!-- 	Pupin into a regional point of reference when it comes to -->
-    <!-- 	multidisciplinary ICT competence related to Big Data -->
-    <!-- 	analytics. The project implements a thoroughly prepared plan -->
-    <!-- 	of actions for knowledge exchange and transfer between the -->
-    <!-- 	linked institutions and carries out a wide range of -->
-    <!-- 	dissemination and outreach activities in the West Balkan -->
-    <!-- 	countries and across Europe. Different knowledge transfer -->
-    <!-- 	instruments (mentorships, brainstorming sessions, school type -->
-    <!-- 	activities) and different types of twinning relationships -->
-    <!-- 	(institution to institution, institution to network) are used -->
-    <!-- 	to further strengthen and extend the collaboration with -->
-    <!-- 	internationally-leading counterparts. -->
-    <!--   </li> -->
-    <!--   <li>[Since 2019] <a href="https://qualichain-project.eu/">QualiChain</a></li> -->
-    <!--   <li>[Since 2018] SemanGit</li> -->
-    <!--   <li>[Since 2018] BETTER</li> -->
-    <!--   <li>[Since 2018] SLIPO</li> -->
-    <!--   <li>[2017] Clear</li> -->
-    <!--   <li>[2013-2016] <a href="http://www.datalyse.fr/">Datalyse</a></li> -->
-    <!-- </ol> -->
+    <h1 class="page-header">Funded Research Projects</h1>
 
+    <table id="t01">
+      <col width="10%">
+      <col width="75%">
+      <col width="15%">
+      <tr>
+	<th>Project</th>
+	<th>Abstract</th>
+	<th>Dates</th>
+      </tr>
+      <tr>
+	<td><a href="https://project-lambda.org/">LAMBDA</a></td>
+	<td><b>LAMBDA</b> defines a scientific strategy for stepping
+	up and stimulating scientific excellence and innovation
+	capacity, increasing research capacities and unlocking the
+	research potential of the biggest and the oldest R&amp;D
+	Institute in the ICT area in the whole West Balkan region,
+	turning the Institute Mihajlo Pupin into a regional point of
+	reference when it comes to multidisciplinary ICT competence
+	related to Big Data analytics.</td>
+	<td>Since 2019</td>
+      </tr>
+      <tr>
+	<td><a href="https://qualichain-project.eu/">QualiChain</a></td>
+	<td><b>QualiChain</b> targets the creation, piloting and
+	evaluation of a decentralised platform for storing, sharing
+	and verifying education and employment qualifications and
+	focuses on the assessment of the potential of blockchain
+	technology, algorithmic techniques and computational
+	intelligence for disrupting the domain of public education, as
+	well as its interfaces with private education, the labour
+	market, public sector administrative procedures and the wider
+	socio-economic developments.</td>
+	<td>Since 2019</td>
+      </tr>
+      <tr>
+	<td><a href="http://www.semangit.de/">SemanGit</a></td>
+	<td><b>SemanGit</b> provides a resource at the crossroads of
+	both Semantic Web and git web-based version control
+	systems. It is actually the first collection of linked data
+	extracted from GitHub based on a git ontology we designed and
+	extended to include specific GitHub features.</td>
+	<td>Since 2018</td>
+      </tr>
+      <tr>
+	<td><a href="https://www.ec-better.eu/">Better</a></td>
+	<td><b>BETTER</b> is implementing a Big Data intermediate
+	service layer focused on creating user-centric services and
+	tools, while addressing the full data lifecycle associated
+	with EO data, to bring more downstream users to the EO market
+	and maximise exploitation of Copernicus data and information
+	services.</td>
+	<td>Since 2018</td>
+      </tr>
+      <tr>
+	<td><a href="http://slipo.eu/">SLIPO</a></td>
+	<td><b>SLIPO</b> develops software, models and processes for:
+	transforming conventional POI formats and schemas into RDF
+	data; interlinking POI entities from different datasets;
+	enriching POI entities with additional metadata, including
+	temporal, thematic and semantic properties; fusing Linked POI
+	data in order to produce more complete and accurate POI
+	profiles; assessing the quality of the integrated POI data;
+	offering value added services based on spatial aggregation,
+	association extraction and spatiotemporal prediction.</td>
+	<td>Since 2018</td>
+      </tr>
+      <tr>
+	<td><a href="http://tyrex.inria.fr/clear/">Clear<a/></td>
+	<td><b>Clear</b> addresses one fundamental challenge of our
+	time: the construction of effective programming models and
+	compilation techniques for the correct, efficient and scalable
+	exploitation of large amounts of data.</td>
+	<td>2017</td>
+      </tr>
+      <tr>
+	<td><a href="http://www.datalyse.fr/">Datalyse</a></td>
+	<td><b>Datalyse</b> is a smart treatment demonstrator
+	dedicated to Big Data focusing on collecting, certificating,
+	integrating, categorizing, securing, enriching and sharing
+	data.</td>
+	<td>2013-2016</td>
+      </tr>
+    </table>
+    
     <h1 class="page-header">Software Projects</h1>
     <ul>
       <li>
